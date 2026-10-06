@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DK Web Designs | Website Design & Content Management</title>
+<meta name="description" content="DK Web Designs creates clean, practical websites and provides website content management, updates and maintenance.">
+<style>
+:root{
+  --navy:#102a43;
+  --blue:#1f5f8b;
+  --light:#f4f7fa;
+  --white:#ffffff;
+  --text:#243b53;
+  --muted:#627d98;
+  --accent:#d9a441;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{font-size:1.45rem;font-weight:800;letter-spacing:.3px;color:#fff}
+.brand span{color:var(--accent)}
+nav ul{display:flex;gap:8px;list-style:none;flex-wrap:wrap;justify-content:flex-end}
+nav a{color:#fff;font-weight:700;padding:9px 12px;border-radius:6px}
+nav a:hover{background:var(--accent);color:var(--navy)}
+.hero{background:linear-gradient(135deg,#102a43,#1f5f8b);color:#fff;padding:105px 0 95px}
+.hero-inner{max-width:800px}
+.eyebrow{color:#f0c86d;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.04;margin-bottom:20px}
+.hero p{font-size:1.2rem;max-width:720px;color:#e6eef5;margin-bottom:30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 19px;border-radius:7px;font-weight:800}
+.btn-primary{background:var(--accent);color:var(--navy)}
+.btn-secondary{border:2px solid #fff;color:#fff}
+section{padding:75px 0}
+.section-title{font-size:2rem;color:var(--navy);margin-bottom:12px}
+.section-lead{color:var(--muted);max-width:760px;margin-bottom:34px}
+.about{background:var(--light)}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:start}
+.about-card,.skill-card,.project,.service-card,.contact-card{background:#fff;border-radius:12px;box-shadow:0 8px 25px rgba(16,42,67,.09)}
+.about-card{padding:30px}
+.about-card p+p{margin-top:14px}
+.skills{padding:28px}
+.skills h3{color:var(--navy);margin-bottom:15px}
+.skill-list{display:flex;flex-wrap:wrap;gap:9px}
+.skill{background:#eaf2f8;color:var(--navy);padding:7px 11px;border-radius:20px;font-size:.9rem;font-weight:700}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.project{overflow:hidden;border:1px solid #e4ebf0}
+.project-top{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;padding:28px}
+.project-top h3{font-size:1.45rem;margin-bottom:5px}
+.project-body{padding:26px}
+.project-body p{margin-bottom:17px}
+.project-body ul{padding-left:20px;margin-bottom:22px}
+.project-body li{margin:6px 0}
+.project-link{font-weight:800;color:var(--blue)}
+.services{background:var(--light)}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service-card{padding:27px}
+.service-card h3{color:var(--navy);margin-bottom:10px}
+.contact{background:var(--navy);color:#fff}
+.contact .section-title{color:#fff}
+.contact .section-lead{color:#d9e5ef}
+.contact-card{padding:30px;color:var(--text);max-width:720px}
+.contact-row{margin:9px 0}
+.contact-row strong{color:var(--navy)}
+.contact-row a{color:var(--blue);font-weight:700}
+footer{background:#091c2c;color:#b8c9d6;text-align:center;padding:24px}
+@media(max-width:800px){
+  .nav{flex-direction:column;padding:16px 0}
+  nav ul{justify-content:center}
+  .hero{padding:75px 0}
+  .about-grid,.projects,.service-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  nav ul{display:grid;grid-template-columns:repeat(2,1fr);width:100%;text-align:center}
+  .hero h1{font-size:2.45rem}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">DK Web <span>Designs</span></a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="eyebrow">Practical websites. Reliable management.</div>
+    <h1>DK Web Designs</h1>
+    <p>Website design, content management and ongoing site maintenance for schools, organizations and small businesses.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="#work">View My Work</a>
+      <a class="btn btn-secondary" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-lead">I'm Derek Kolowca, the person behind DK Web Designs. I build and maintain websites with an emphasis on clear information, straightforward navigation and practical features that make sites easier to manage.</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <p>My website work grew from managing real-world sites where information needs to stay current and visitors need to find what they're looking for quickly.</p>
+        <p>I've worked on school and athletic-association websites, handling page design, content updates, responsive layouts, schedules, results, standings, forms and ongoing maintenance.</p>
+        <p>I bring a practical approach to web work: understand what the site needs to accomplish, make it easy to use, and keep it manageable after launch.</p>
+      </div>
+      <div class="skill-card skills">
+        <h3>Skills & Tools</h3>
+        <div class="skill-list">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">PHP</span>
+          <span class="skill">Responsive Design</span>
+          <span class="skill">Website Maintenance</span>
+          <span class="skill">Content Management</span>
+          <span class="skill">Dreamweaver</span>
+          <span class="skill">Pinegrow</span>
+          <span class="skill">FTP</span>
+          <span class="skill">Forms & Results</span>
+          <span class="skill">Microsoft Word</span>
+          <span class="skill">Microsoft Excel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <h2 class="section-title">Featured Work</h2>
+    <p class="section-lead">Two active website projects that demonstrate design, content administration and ongoing site development.</p>
+    <div class="projects">
+      <article class="project">
+        <div class="project-top">
+          <h3>St. Gerard School</h3>
+          <p>School website</p>
+        </div>
+        <div class="project-body">
+          <p>Website management and modernization for a Catholic elementary school in Winnipeg.</p>
+          <ul>
+            <li>Responsive page layouts and navigation</li>
+            <li>School news and information pages</li>
+            <li>Calendar and school-cycle information</li>
+            <li>PDF-to-web content conversion</li>
+            <li>Ongoing content and site maintenance</li>
+          </ul>
+          <a class="project-link" href="https://www.stgerardschool.net/" target="_blank" rel="noopener">Visit St. Gerard School →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-top">
+          <h3>MCSAA</h3>
+          <p>Manitoba Catholic Schools Athletic Association</p>
+        </div>
+        <div class="project-body">
+          <p>A sports-association website with dynamic information and administrative features.</p>
+          <ul>
+            <li>Sports hubs, schedules and member-school pages</li>
+            <li>Score-submission system</li>
+            <li>Automatically calculated live standings</li>
+            <li>Latest-results display</li>
+            <li>Responsive layouts and ongoing maintenance</li>
+          </ul>
+          <a class="project-link" href="https://www.mcsaa.ca/" target="_blank" rel="noopener">Visit MCSAA →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title">Services</h2>
+    <p class="section-lead">Support for organizations that need a new website or help keeping an existing site accurate, useful and current.</p>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Website Design</h3>
+        <p>Clean, responsive websites built around the information your visitors actually need.</p>
+      </div>
+      <div class="service-card">
+        <h3>Content Management</h3>
+        <p>Page updates, documents, schedules, images, announcements and other changing website content.</p>
+      </div>
+      <div class="service-card">
+        <h3>Site Maintenance</h3>
+        <p>Ongoing changes, fixes and improvements to keep an existing website working well.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-lead">Looking for website help or interested in discussing my experience? Get in touch.</p>
+    <div class="contact-card">
+      <div class="contact-row"><strong>Derek Kolowca</strong></div>
+      <div class="contact-row"><strong>Email:</strong> <a href="mailto:dkolowca@gmail.com">dkolowca@gmail.com</a></div>
+      <div class="contact-row"><strong>Phone:</strong> <a href="tel:+12048021985">204-802-1985</a></div>
+      <div class="contact-row"><strong>Location:</strong> Manitoba, Canada</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  &copy; 2026 DK Web Designs. All rights reserved.
+</footer>
+</body>
+</html>
